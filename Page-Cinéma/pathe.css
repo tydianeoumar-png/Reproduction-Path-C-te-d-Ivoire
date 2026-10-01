@@ -1,0 +1,714 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090a0b;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Heebo;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box,
+.account-box {
+    position: relative;
+}
+
+.search-box button,
+.account-box button {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.search-box svg,
+.account-box svg {
+    width: 20px;
+    height: 20px;
+}
+
+.lang-box {
+    position: relative;
+}
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    background: transparent;
+    border: none;
+
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-height: 120px;
+    margin-top: 8px;
+    background: #0c0e0f;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    background: #0c0e0f;
+    color: #ffffff;
+    text-align: left;
+}
+
+.dropdown-content button:hover {
+    background: #f0f0f0;
+}
+
+.lang-box:hover .dropdown-content {
+    display: block;
+}
+
+.hero-bannire {
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(to right, #000000 0%, #000000 35%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0) 100%), url(assets/images/herobannièrepathe.jpg);
+    background-size: cover;
+    background-position: 29% center;
+}
+
+.Texts-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 40px;
+    gap: 50px;
+}
+
+.cinema-badge {
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 8px 50px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cinema-badge h6 {
+    font-family: Heebo;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255, 0.6);
+    margin-bottom: 0;
+}
+
+.cinema-badge p {
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(255, 255, 255, 0.6);
+    margin-top: 0;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-title p {
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.hero-title h1 {
+    font-family: Libre Franklin;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 68.3px;
+    color: #ffffff;
+}
+
+.detaille-btn {
+    display: flex;
+    align-items: center;
+    background:  rgb(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.detaille-btn p {
+    font-family: Heebo;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.detaille-btn svg {
+    width: 16px;
+    height: 16px;
+    color: #ffffff;
+}
+
+.programme {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cond-acces, .e-billet {
+   flex: 1; 
+   position: relative;
+   height: 160px;
+   border-radius: 7px;
+   border: 1px solid #3a3a3a;
+   overflow: hidden;
+   display: flex;
+}
+
+.cond-acces img, .e-billet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cond-acces::after, 
+.e-billet::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        #000000 0%,
+        #000000 35%,
+        rgba(0, 0, 0, 0.7) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.programme-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color: #ffffff;
+    font-family: Heebo;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+    z-index: 2;
+}
+
+.seances-navigation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+}
+
+/* Filtre */
+.filter-btn,
+.calender-btn {
+    width: 110px;
+    height: 70px;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    background-color: #202122;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Flèchees */
+.arrow,
+.arrow-btn {
+    width: 40px;
+    height: 70px;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    background-color: #202122;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Date */
+.date-btn {
+    width: 90px;
+    height: 70px;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    background-color: #202122;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+/* Date */
+.date-btn span {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Heebo;
+}
+
+/* LISTE DES FILMS */
+.films {
+    width: 100%;
+    padding: 35px 20px;
+    box-sizing: border-box;
+}
+
+.film {
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.film-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.film-info img {
+    width: 58px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contenu texte */
+.film-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Badge : Nouveau */
+.film-label {
+    width: max-content;
+    margin-bottom: 4px;
+    padding: 3px 6px;
+    background-color: #f00000;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Heebo;
+    line-height: 16px;
+}
+
+.film-details h3 {
+    margin: 0;
+    color: #ffffff;
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.film-details p {
+    margin: 5px 0 0;
+    color: #777777;
+    font-family: Heebo;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.seances {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    min-height: 85px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.seances button {
+    position: relative;
+    flex: 0 0 174px;
+    height: 80px;
+    padding: 0 10px;
+    border: 1px solid #242629;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Heebo;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.seances button:has {
+    background-color: #202122;
+}
+
+.seances .heure {
+    font-family: Heebo;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 27px;
+}
+.seances .format {
+    margin-left: 4px;
+    color: #b7b7b7;
+    font-family: Heebo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    align-self: center;
+}
+.seances .fin {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #777777;
+    font-family: Heebo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    align-self: center;
+}
+
+.seances .fin svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+}
+.seances .salle {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    padding: 3px 5px;
+    background-color: #ffca05;
+    color: #111111;
+    font-family: Heebo;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.seances button:has(.salle) {
+    align-items: self-end;
+    padding-bottom: 15px;
+}
+
+.prochaines-seances {
+    position: absolute;
+    top: 20px;
+    left: 73px;
+    padding: 14px 18px;
+    border-radius: 5px;
+    background-color: #292a2c;
+    color: #ffffff;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.help-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #242629;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 50px 15px;
+    gap: 5px;
+}
+
+.help-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.help-section-header img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.help-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.help-section-content h2 {
+    margin: 0;
+    font-family: Heebo;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.help-section-content p {
+    margin: 0;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.btn-help {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 10px;
+    padding: 0 15px;
+    border: none;
+    width: max-content;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #292a2c;
+    color: #ffffff;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.btn-help svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+.faq-container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #dcd3c7;
+    padding: 24px 0;
+}
+
+.details {
+    width: 100%;
+}
+
+.faq-item summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+
+}
+
+.faq-item summary strong, .faq-item summary {
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.faq-item, .reponse {
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 6px;
+    margin-bottom: 0;
+    line-height: 24px;
+    
+}
+
+.main-footer {
+    padding: 40px 20px;
+}
+
+.lang {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Heebo;
+    line-height: 16px;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: rgb(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Heebo;
+    font-weight: 500;
+    line-height: 16px;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.social-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-copyright p {
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color:  rgb(255, 255, 255, 0.4);
+}
+
+
+
