@@ -1,0 +1,95 @@
+.body{
+    font-family: 'Heebo', sans-serif;
+    font-size: 17px;
+    background-color: black;
+}
+.arriere{
+    width: 100%;
+    height: 125vh;
+    background-image: url("assets/images/banner-app\ \(1\).jpeg");
+    background-size:cover;
+    background-position: 50%;
+}
+.navbar{
+    display:flex;
+    gap: 850px;
+}
+.logo{
+    display: flex;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    gap: 40px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+.icone{
+    width: 40px;
+    height: 40px;
+    background-color: #252a29;
+    border-radius: 20%;
+    border: none;
+}
+.connexion{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+.navtext{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.navtext:hover{
+    opacity: 1;
+}
+.navtext1{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+}
+.yy{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+.tt1{
+    font-size: 50px;
+    padding-top: 80px;
+}
+.sous{
+    font-size: 25px;
+    margin-top: -20px;
+}
+.down{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+}
+.ui{
+    margin-top: -15px;
+}
+.btn{
+    width: 170px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #febd29;
+    border: none;
+    margin-top: 12px;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #fecf4b;
+}
+.phone{
+    width: 400px;
+    height: 400px;
+}
+.app-text{
+    margin-top: 150px;
+}
+.app{
+    display: flex;
+    gap: 270px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
