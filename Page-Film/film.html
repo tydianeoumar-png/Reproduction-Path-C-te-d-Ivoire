@@ -17,6 +17,67 @@
         <script src="https://kit.fontawesome.com/63a5a14de0.js" crossorigin="anonymous"></script>
     </head>
     <body>
+         <header class="hero-bannire">
+            <!--BARRE DE NAVIGATION-->
+            <nav class="navbar">
+                <!-- 1. Logo-->
+                <div class="navbar-logo">
+                    <a href="">
+                        <img src="assets/images/logopathe.png" loading="lazy" alt="logo-de-cinema-pathe" width="75px"
+                            height="auto">
+                    </a>
+                </div>
+
+                <!-- 2. Menu de navigation-->
+                <ul class="navbar-menu">
+                    <li><a href="">Films</a></li>
+                    <li><a href="">Cinéma</a></li>
+                    <li><a href="">Offres</a></li>
+                </ul>
+
+                <!-- 3. Actions à droite-->
+                <div class="navbar-actions">
+
+                    <div class="search-box">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-search preview-icon">
+                                <path d="m21 21-4.34-4.34" />
+                                <circle cx="11" cy="11" r="8" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="account-box">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-round preview-icon">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M20 21a8 8 0 0 0-16 0" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="lang-box">
+                        <!-- Le bouton principal visible-->
+                        <button class="dropdown-btn">FR <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down preview-icon">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg></button>
+
+                        <!-- Le Menu déroulant caché par défaut-->
+                        <div class="dropdown-content">
+                            <button type="button" onclick="changeLanguage('fr')">Français</button>
+                            <button type="button" onclick="changeLanguage('en')">English</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    
+        </header>
+
         <section class="cinema-films">
             <div class="film-section">
                 <div class="section-title">
@@ -232,5 +293,140 @@
                 </div>
             </div>
         </section>
+
+          <section class="help-section">
+            <div class="help-container">
+                <div class="help-section-header">
+                    <img src="assets/images/iconhelp.png" alt="help-icon">
+                    <div class="help-section-content">
+                        <h2>Vous avez une question?</h2>
+                        <p>Accédez à notre Aide en ligne pour trouver la réponse.</p>
+                    </div>
+                </div>
+
+                <div class="btn-help">Accéder au centre d'aide<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right preview-icon">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg></div>
+            </div>
+
+            <!--Liste des questions/réponses-->
+            <div class="faq-container">
+
+
+                <!--Question 1-->
+                <article class="faq-item">
+                    <details>
+                        <summary>C’est quoi un film en Dolby Atmos? <span class="symbole"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-down preview-icon">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg></span></summary>
+                        <p class="reponse">Vivez une nouvelle expérience cinéma avec Dolby Atmos, la dernière
+                            <br>technologie audio mise au point pour vous faire vivre intensément votre film.
+                        </p>
+                    </details>
+                </article>
+
+                <!--QUEXTION 2-->
+                <article class="faq-item">
+                    <details>
+                        <summary>Comment fonctionne la carte 5 places? <span class="symbole"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-down preview-icon">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg></span></summary>
+                        <p class="reponse">Vous donne accès à un tarif préférentiel jusqu’à 3 places par séances,
+                            valable <br>3 mois, après la date d’achat, hors séances spéciales et supplément
+                            <br>technologie.
+                        </p>
+                    </details>
+                </article>
+
+                <!--Qustion 3-->
+                <article class="faq-item">
+                    <details class="">
+                        <summary>Prenez votre temps, votre fauteuil vous attend <span class="symbole"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-down preview-icon">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg></span></summary>
+                        <p class="reponse">Avec le placement numéroté, vous choisissez votre fauteuil préféré dans la
+                            <br>salle au moment de l’achat de votre billet en ligne ou sur site
+                        </p>
+                    </details>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Section footer -->
+        <footer class="main-footer">
+
+            <div class="lang">
+                <img src="assets/images/logopathe.png" alt="logo-pathe" width="75px">
+                <img src="assets/images/lang.png" alt="lang">
+            </div>
+
+            <div class="footer-container">
+
+                <!-- Colonne 1 -->
+                <div class="footer-column">
+                    <h3>Les nouveautés à l'affiche</h3>
+                    <ul>
+                        <li><a href="#">Tous les films</a></li>
+                        <li><a href="#">Tombé du ciel</a></li>
+                        <li><a href="#">L'Odyssée</a></li>
+                        <li><a href="#">Mutiny</a></li>
+                        <li><a href="#">Practical Magic 2 / Les ensorceleuses 2</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 2 -->
+                <div class="footer-column">
+                    <h3>A propos</h3>
+                    <ul>
+                        <li><a href="#">Offre anniversaire</a></li>
+                        <li><a href="#">Offres B2B</a></li>
+                        <li><a href="#">Espace recrutement</a></li>
+                        <li><a href="#">School session</a></li>
+                        <li><a href="#">L'experience Pathé</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 -->
+                <div class="footer-column">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="#">Paramétrer vos cookies</a></li>
+                        <li><a href="#">Conditions Générales</a></li>
+                        <li><a href="#">Charte de protection des données personnelles</a></li>
+                        <li><a href="#">Politique CVD</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 -->
+                <div class="footer-column">
+                    <h3>VOUS AVEZ DES QUESTIONS ?</h3>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-copyright">
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                <p>Les Cinémas Pathé Côte d'Ivoire © 2026 Tous droits réservés ®</p>
+            </div>
+        </footer>
     </body>
     </html>

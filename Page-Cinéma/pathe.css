@@ -493,7 +493,7 @@ body {
 .help-section {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     border: 1px solid #242629;
     width: 100%;
     margin: 0 auto;
@@ -504,7 +504,7 @@ body {
 
 .help-container {
     max-width: 500px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 24px;
     align-items: center;
     justify-content: center;
@@ -587,6 +587,14 @@ body {
     width: 100%;
 }
 
+.details summary svg {
+    transition: transform 0.2s ease;
+}
+
+.details[open] summary svg {
+    transform: rotate(180deg);
+}
+
 .faq-item summary {
     list-style: none;
     display: flex;
@@ -594,6 +602,12 @@ body {
     align-items: center;
     cursor: pointer;
     outline: none;
+}
+
+.faq-item summary svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 .faq-item summary::-webkit-details-marker {
