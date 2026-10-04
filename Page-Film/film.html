@@ -1,6 +1,7 @@
 <DOCTYPE html>
     <html lang="fr">
-          <head>
+
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="device-width, initial-scale 1.0">
         <title>Film</title>
@@ -16,8 +17,9 @@
         <!-- lien font awesome-->
         <script src="https://kit.fontawesome.com/63a5a14de0.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
-         <header class="hero-bannire">
+        <header class="hero-bannire">
             <!--BARRE DE NAVIGATION-->
             <nav class="navbar">
                 <!-- 1. Logo-->
@@ -75,7 +77,37 @@
                     </div>
                 </div>
             </nav>
-    
+
+            <div class="hero-content">
+                <div class="hero-title">
+                    <img src="assets/images/titlehero.png" alt="hero-title">
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="reserve-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-ticket preview-icon">
+                            <path
+                                d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+                            <path d="M13 5v2" />
+                            <path d="M13 17v2" />
+                            <path d="M13 11v2" />
+                        </svg>
+                        <span>Réserver maintenat</span>
+                    </button>
+
+                    <button class="list-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-plus preview-icon">
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                        </svg>
+                        <span>Ma liste</span>
+                    </button>
+                </div>
+            </div>
         </header>
 
         <section class="cinema-films">
@@ -83,11 +115,20 @@
                 <div class="section-title">
                     <div class="title-left">
                         <h2>À l'affiche au cinéma</h2>
-                        <span>au Pathé Cap sud <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right preview-icon"><path d="m9 18 6-6-6-6"/></svg></span>
+                        <span>au Pathé Cap sud <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-right preview-icon">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg></span>
                     </div>
 
                     <a href="" class="all-films">Tous les films à l'affiche
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right preview-icon"><path d="m9 18 6-6-6-6"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right preview-icon">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
                     </a>
                 </div>
 
@@ -156,7 +197,12 @@
 
                     <div class="title-left">
                         <h2>Avant-premières et préventes</h2>
-                        <span>au Pathé Cap sud <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right preview-icon"><path d="m9 18 6-6-6-6"/></svg></span>
+                        <span>au Pathé Cap sud <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-right preview-icon">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg></span>
                     </div>
                 </div>
 
@@ -294,7 +340,7 @@
             </div>
         </section>
 
-          <section class="help-section">
+        <section class="help-section">
             <div class="help-container">
                 <div class="help-section-header">
                     <img src="assets/images/iconhelp.png" alt="help-icon">
@@ -429,4 +475,5 @@
             </div>
         </footer>
     </body>
+
     </html>
