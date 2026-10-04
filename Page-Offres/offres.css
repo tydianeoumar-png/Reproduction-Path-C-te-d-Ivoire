@@ -93,3 +93,155 @@
     margin-left: 200px;
     margin-top: 100px;
 }
+.btn3{
+    display: flex;
+    gap: 7px;
+    transition: 0.5s;
+}
+.btn3:hover{
+    gap: 15px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.card-img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.card-text{
+    margin-top: 60px;
+}
+
+.faq1{
+    display: flex;
+    gap: 30px;
+    margin-left: 150px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    list-style: none;
+}
+.btn2{
+    width: 270px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #222324;
+    border: none;
+    font-size: 17px;
+    color: white;
+    margin-top: 30px;
+}
+.faq2{
+    width: 40%;
+    margin-top: 20px;
+}
+.faq{
+    display: flex;
+    gap: 150px;
+}
+.fr{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    background-color: #222324;
+    border: none;
+}
+.en{
+    background-color: transparent;
+    border: 1px solid gray;
+    transition: 0.5s;
+}
+.en:hover{
+    background-color: #222324;
+}
+
+/* Footer */
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 850px;
+    margin-top: 50px;
+}
+.foot-text{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 50px;
+}
+.foot-text1{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.foot-text1:hover{
+    opacity: 1;
+}
+.table{
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.hh{
+    text-align: center;
+    opacity: 0.7;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+}
+.icon{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Offres */
+.offres{
+    width: 90%;
+    height: 60vh;
+    margin-left: 8%;
+    background-color: none;
+}
+.cap{
+    display: flex;
+    gap: 13px;
+}
+.tcard{
+    width: 380px;
+    height: 130px;
+    background-color: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+.tcard:hover{
+    background-color: #222324;
+}
+.tcard-img{
+    width: 130px;
+    height: 120px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
