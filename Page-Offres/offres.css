@@ -47,6 +47,10 @@
     color: white;
     font-family: 'Heebo', sans-serif;
 }
+.link{
+    text-decoration: none;
+    margin-top: 18px;
+}
 .yy{
     color: white;
     font-family: 'Heebo', sans-serif;

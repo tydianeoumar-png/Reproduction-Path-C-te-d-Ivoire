@@ -41,6 +41,10 @@
     color: white;
     font-family: 'Heebo', sans-serif;
 }
+.link{
+    text-decoration: none;
+    margin-top: 18px;
+}
 .icone{
     width: 40px;
     height: 40px;

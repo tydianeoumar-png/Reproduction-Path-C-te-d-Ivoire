@@ -724,5 +724,43 @@ body {
     color:  rgb(255, 255, 255, 0.4);
 }
 
+/* FAQ */
+.faq{
+    display: flex;
+    gap: 150px;
+}
+.faq1{
+    display: flex;
+    gap: 30px;
+    margin-left: 150px;
+}
+.text{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    list-style: none;
+}
+.btn2{
+    width: 270px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #222324;
+    border: none;
+    font-size: 17px;
+    color: white;
+    margin-top: 30px;
+}
+.faq2{
+    width: 40%;
+    margin-top: 20px;
+}
+.faq{
+    display: flex;
+    gap: 150px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
